@@ -12,7 +12,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, confusion_m
 import seaborn as sns
 
 # The data frame is read for the classifer
-dataFrame = pd.read_csv("creditcard.csv")
+dataFrame = pd.read_csv("creditcard_m.csv")
 print("Dataset is loaded\n")
 
 
@@ -160,7 +160,7 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
                     alpha=0.8, c=cmap(idx),
                     marker=markers[idx], label=cl)
 
-dataFrame_test = pd.read_csv("creditcard.csv")
+dataFrame_test = pd.read_csv("creditcard_m.csv")
 
 x_test_value = dataFrame_test.iloc[:, 1:29].values
 y_test_value = dataFrame_test.iloc[:, 30].values
